@@ -169,6 +169,7 @@ resource "aws_lb_target_group" "km_lb_target" {
 }
 
 # Redirect all traffic from the ALB to the target group
+# check
 resource "aws_lb_listener" "km_frontend_listener" {
   load_balancer_arn = aws_lb.km_lb.arn
   port              = "80"
